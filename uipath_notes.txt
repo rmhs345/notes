@@ -1,0 +1,43 @@
+UIPath notes
+
+
+--------------------------------------------------------------------------------------------------------
+RPA - Robotic Process Automation
+
+Enterprise automation combines RPA with other tools such as AI, process mining, and analytics
+
+Typical order when creating automation
+	Discover, Build, Manage, Run, Enagage
+
+Discover: Discover automation opportunities
+Build: Build automation quickly, from simple to advance
+Manage: Manage, deploy, and optimize automation at enterprise scale
+Run: Run automations through robots that work with your applications and data
+Engage: Engage people and robots as one team for seamless process collaboration
+
+RPA Developers focus on the build stage
+WIll spend more of their time in Studio, Orchestrator, and the Robot
+
+Core components:
+	Studio:				Made for building automation processes
+	Robot:				Robot is built to run those processes
+	Orchestrator:		Web app that acts as a interface between Studio and Robot (Contains packages)
+		Provisioning
+		Control and license distribution
+		Automation storage and distribution
+		Running automation jobs in unattended mode
+		Monitoring
+These components communicate with each other in different phases
+	
+Published automation projects are a Package
+Package + Folder creates a Process
+
+Attended Robots: Someone is triggering the automation
+UnAttended Robot: Robots that are used on a server and are not triggered by someone (Work non stop)
+
+Robots have a heartbeat signal that sends a request to Orchestrator waiting for work
+Then it will pass the job information to the robot.
+
+StudioX is ment for business users
+Studio is ment for RPA developers
+Studio Pro is ment for advanced RPA developers
