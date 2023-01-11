@@ -1,0 +1,107 @@
+Salesforce information
+
+Lightning and Classic: Different layouts / Versions
+Cases are the main thing with Salesforce. Clients go through cases to perform their jobs
+
+--------------------------------------------------------------------------------------------------------
+
+** Case management
+Organizing customer cases in one place, and making sure it goes to the right person
+Different automation tools
+	Queues						Creates lists that allows agents to jump in
+	Assignment rules			Auto assign cases to specific agents
+	Escalation rules			Auto escalates the cases to the right people
+	Auto response rules			Send personalized emails responses based on each case details
+These can be added under Service setup
+
+--------------------------------------------------------------------------------------------------------
+
+** Digital Engagement
+Email and web form channels (Email service
+Collecting cases from customers either through emails for webforms
+
+Other ways of engagement
+Call center
+Self-service help center
+Social Customer service (Twitter, etc.)
+Embedded chat services
+Mobile support
+Messaging (SMS text and Messagner)
+On site field service
+
+--------------------------------------------------------------------------------------------------------
+
+** Lightning Experience
+Lightning Knowledge
+Transforming notes into articles that customers can reference
+"Helping them answer their own questions"
+Allow the support agent to create a knowledge base on the website or other knowledge bases
+Allows them to setup employee onboarding (Their own pace of learning)
+
+This is assoicated with cases that allow agents to access them
+
+--------------------------------------------------------------------------------------------------------
+
+** Lightning Web Components
+
+--------------------------------------------------------------------------------------------------------
+
+** Flows
+Automation can be either interactive or behind the scene
+
+Interactive --
+Screen Flows					Create interactions with clients
+Autolaunched Flows				Create automations that run when buttons are clicked
+Approval Processes				Series of steps with assigned appprovers
+Lightning Components			HTML and JavaScript to build interactive components to embed
+Visualforce Pages				HTML and Apex code
+
+Behind the Scenes --			
+Record-Triggered Flows			Create automation that runs when a record is created/edited/deleted
+Schedule-Triggered Flows		Create automations that runs at a time and frequency
+Platform Event-Triggered Flows	Create automations that run when a platform event message is received
+Apex							Apex code to write reusable blocks of automation
+
+Flow buzzwords
+Salesforce Flow		Blanket term for everthing in Salesforce that allows you to create/manage/run automation with clicks not code
+Flow				Automation configuration saved in Salesforce with the structure of a flowchart
+Flow Builder		Primary tool for creating flows
+Flownatic			Someone who likes creating flows
+
+Canvas is the working area where you place nodes
+Flow manager, lists of things you used within the flow
+Declarative just means that it doesn’t require software programming skills. Flow Builder is a declarative tool.
+
+* Look for declarative options before looking for coding solutions first
+
+Screen flow
+Contains a toolbox that contains all the nodes
+Canvas which is the working area to add the nodes
+Button bar that provides information about the flow
+
+Default is autolayout out and contains extra features compared to free-form
+
+Flow contains three nodes: 
+Elements		Nodes that make things happen on the canvas
+	Interaction		Interacts with users
+	Data			Interacts with data
+	Logic			INteracts with the flow itself
+	
+
+Connectors		Defines the path the flow takes
+Resoruces		Does not appear on the canvas, but are referenced by flow elements
+
+* Best to plan the business process before you try to automate it. As it allows you to idenify potential problems
+
+bools are defined using {!GlobalConstant.True} or {!GlobalConstant.False}
+If you use true/false, flow will think it's a string
+
+API name is the name of the variable
+!! Add a decription to give context to the variable
+collection == array (Ordered List)
+
+No defined date format used in salesforce - DTO
+
+Formula allows you to format and use logic on your data
+Template allows you to structure a larger block of text
+
