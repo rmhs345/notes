@@ -105,3 +105,21 @@ No defined date format used in salesforce - DTO
 Formula allows you to format and use logic on your data
 Template allows you to structure a larger block of text
 
+--------------------------------------------------------------------------------------------------------
+
+** Flow resources
+
+--------------------------------------------------------------------------------------------------------
+
+resources are placeholders
+Ex. in a email field:
+	Hi, {!User.FirstName}.
+{!User.FirstName} was the placeholder, so when the email is sent it displays the user
+actual name
+
+Constant represent a fix value
+Choice, Picklet Choice Set, or Record Choice Set represent an option in a screen component
+	Choices consists of two different components: label and a value
+Formula represents a calculated value
+Text Template represents formatted text
+Variable represents a value that can change throughout the flow
