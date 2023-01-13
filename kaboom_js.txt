@@ -1,0 +1,30 @@
+Kaboom.js Information
+
+
+--------------------------------------------------------------------------------------------------------
+
+Call kaboom() init the game context
+This is the default way of init the context, but you can pass arg options into it
+
+Game Object is the base unit of an entity within Kaboom
+Everything is a gameobject from the avatar to text
+
+Each cell is 32x32 with a 1px border around them
+
+// Get a sprite from a sprite sheet
+loadSprite("test", "sprites/colored_tilemap.png", {
+	sliceX: 16, // How many sprites vertically
+	sliceY: 10, // How many sprites horizontally
+})
+
+Sprites are accessed by index, so you can do:
+const player = add([
+	// List of components, each offers a set of functionalities
+	sprite("test", {
+		frame: 0
+	}),
+])
+
+To get the specific frame from the sprite
+Or you can manually set the sprite by doing
+player.frame = x // Where x is the index in the tilemap
