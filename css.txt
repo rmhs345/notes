@@ -1,0 +1,34 @@
+CSS information
+
+--------------------------------------------------------------------------------------------------------
+HTML element, this chunk of css affects all elements with the name
+html {}
+
+CSS class, allowed to be reused multiple times throughout the html document
+.name {} 
+
+CSS id, only to be used once in a html document
+#name {}
+
+Comments in CSS are defiend by /* */
+display: flex; -> Turns the element into a flex container (Flexbox)
+align-items: center; Vertially algin the items
+justify-content: center; Horizontally algin the items
+margin: Used to create space around the element
+width: The total width of the element
+height: The total height of the element
+min-height: The minimum height the element can be
+
+Center an element:
+	On the parent place:
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	Then any element placed into the element will be centered on both axis
+	
+Make HTML/BODY take full document page
+	html, body {
+		margin: 0;
+		height: 100%;
+	}
+	Both the html and body element are getting the css properties

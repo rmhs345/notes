@@ -1,0 +1,13 @@
+HTML information
+
+--------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html> -> Defines the document type
+<html> -> Root of the html document
+<head> -> The <head> element is a container for metadata (data about data)
+<meta> -> Allows options to change the metadata of the document
+<body> -> Defines the document body
+
+
+<div> -> Defines a division or a section in an HTML document (Used as a container for other html elements)
+<link> -> Used to referenced external documents into the HTML page (CSS or JavaScript)
