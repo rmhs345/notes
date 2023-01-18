@@ -123,3 +123,54 @@ Choice, Picklet Choice Set, or Record Choice Set represent an option in a screen
 Formula represents a calculated value
 Text Template represents formatted text
 Variable represents a value that can change throughout the flow
+
+Enable the "Allow multiple values" checkbox to allow an array like structure for the variable
+
+"Available for input" Allows the variable to take values from an outside source
+"Available for output" Allows for variables to be exported out of the flow
+
+Screen element:
+Screen components pane: Displays all the screen components
+Screen canvas: The canvas is where you build the screen
+Properties Pane: Allows you to modify properties of components and the screen
+
+"Rules determine wheter a particular action should be taken or not"
+* Always use the global constants for true and false.
+* Use the default outcome as the last answer to your decision's question
+Group all keep and delete into two different buckets, then dump all at once. (Save time)
+
+Use flow to automatically do things on behalf of the user:
+including making updates to your data, sending emails, sending information to an external system
+
+Action is an interaction element that cna do a specific action defined. Example is posting to Chatter.
+More examples:
+	Post to Chatter.
+	Send Email.
+	Submit For Approval.
+	Activate or Deactivate a Permission Set.
+	Global or object-specific actions provided by Salesforce.
+	
+--------------------------------------------------------------------------------------------------------
+
+** Service cloud for Agents
+
+--------------------------------------------------------------------------------------------------------
+	
+Service console is a help-desk application that enables agents to do two things:
+	Create and manage customer cases from multiple digital channels
+	Boost productivity and simplify processes
+
+Admins can create different consoles for different types of support
+
+Either they can work off an un-assigned format or by Omni-channel which assigns them cases
+
+These are the benefits of the service
+Productivity workspaces - Work with multiple records across tabs / subtabs
+Streamlined case management - Resolve cases faster by quickly spotting a variety of support processes and service levels
+Automatic process and routing - Receive case assignments based on your skills, caseload, and access to specific channels.
+Virtual collaboration - Post internal messages and collaborate with teammates on Slack no matter where they are. 
+	Create Slack channels outside of cases to track information for specific projects and to reduce email and distractions
+	
+Console is available through the web and mobile
+
+
