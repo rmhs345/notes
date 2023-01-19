@@ -150,6 +150,36 @@ More examples:
 	Activate or Deactivate a Permission Set.
 	Global or object-specific actions provided by Salesforce.
 	
+- Adding tests for flows
+Before creating tests, you should create a test plan.
+Consider things like:
+	When you expect actions to occur
+	When you expect actions to not occur
+	How formulas should resolve
+	
+Debug gives you additonal details and allows you to input data into variables
+Each time you run the application, a flow interview starts. A flow interview is an instance of a flow.
+
+- Enable User Access For Your Flow
+Activate the flow using the activate button within the flow
+Then you need to give permission to the users
+	Identify the users who will run the flow.
+	Create a permission set that includes the Run Flows permission.
+	Assign the permission set to the users you identified.
+	
+Distributing options
+	Screen Flow	
+		Flow actions
+		Lightning pages
+		Lightning community pages
+		Custom buttons or custom links
+		Web tabs
+		Direct flow URLs
+		Snap-in deployments
+	Autolaunched Flow	
+		Custom buttons or custom links
+		Web tabs
+		
 --------------------------------------------------------------------------------------------------------
 
 ** Service cloud for Agents
@@ -172,5 +202,44 @@ Virtual collaboration - Post internal messages and collaborate with teammates on
 	Create Slack channels outside of cases to track information for specific projects and to reduce email and distractions
 	
 Console is available through the web and mobile
+
+--------------------------------------------------------------------------------------------------------
+
+** Service Metrics
+
+--------------------------------------------------------------------------------------------------------
+- Defining Metrics
+
+Two types of service metrics: Internal and External
+	Track two things
+	Effectiveness of your agents, and the satisfaction of your customers
+Average Handle Time (AHT)
+Tracking customer satisfaction (CSAT) and net promoter score (NPS) are great indicators of overall customer happiness
+What are the metric goals and what is important to them
+
+- Create a Service Metrics Strategy
+Should indicate the health of their customer service operations
+Review current metric strategy, have a mix of internal and external, then finalize
+
+- Analyze Your Service Data in Salesforce
+Offers a varity of features for metrics
+	Reports
+	Dashboards
+	AppExchange
+	Einstein Analytics
+	Einstein Discovery
+	Service Analytics App
+
+Create a report based on case data -> Then can create a dashboard for it
+
+--------------------------------------------------------------------------------------------------------
+
+** Lightning Web Components Basics
+
+--------------------------------------------------------------------------------------------------------
+
+- Discover Lightning Web Components
+Focused on the developer and the user experience
+
 
 
