@@ -7,8 +7,181 @@ html {}
 CSS class, allowed to be reused multiple times throughout the html document
 .name {} 
 
-CSS id, only to be used once in a html document
-#name {}
+CSS is defined by a set of rules
+Where there are selectors, properties, and values
+property value pair -> prop:value
+- 
+Selectors
+Refer to the HTML elements to which the CSS rules apply
+
+- Universal Selector (*)
+Selects elements of any type
+ex: 
+* {
+	color: purple -> every element will have the prop:value pair assigned to it
+}
+
+- Type / Element selector 
+Will select all elements of the given type.
+ex. div, p, span
+
+- Class selector 
+Will select all the elements of a given class
+ex. class="alert-text"
+Needs a period before it
+.alert-text {
+	color: red
+}
+
+- ID Selectors
+Select an element with a given ID
+Can only have one
+id="afdaf"
+#afdaf {
+	color: red;
+} 
+
+- Grouping selectors, if we have elements that share the same properties
+ie 
+.read {
+	color: white,
+	/* other stuff */
+}
+.unread {
+	color: white, 
+	/* other stuff */
+}
+
+You can group them together like so to reduce repetition in the file
+.read, .unread {
+	color: white;
+} 
+
+.read {
+	/* other stuff */
+}
+.unread {
+	/* other stuff */
+}
+
+- Chaining Selectors
+We can have elements that share the same class but have differnet
+classes mixed in. But say we want to target a class with
+specific combination of classes, then we can use chain selector.
+ex. 
+one html element has 
+	subsection header
+	subsection preview
+We can target the one with header using
+.subsection.header {
+	/* stuff */
+}
+
+You can also chain classes and ids together
+You cannot chain more than one type selector
+
+- Descendant Combinator
+Represents in CSS by a single space between selectors
+ex. 
+.classa
+	.classb
+		.classc
+would be .classa .classb .classc 
+This would target the classc if it's nested within a classa and classb
+There are no limits for combinator
+
+Common properties
+color - Sets an element text colour
+background-color - Sets an element background colour
+These can take in a name "red", "transparent" keyword
+also accepts HEX, RGB, HSL values 
+using #1100ff, rgb() - rgba, hsl() - hsla
+
+font-family - can be a single value or a comma-separated list
+Fonts fall into two categories: 
+	Font family name "DejaVu Sans"
+	Generic family name "sans-serif"
+If the browser cannot find or does not support the first font in a list
+it will move on to the next one till it finds a valid font
+
+font-size: sets the size of the font
+
+font-weight: affects the boldness of the text
+
+text-algin: will align text horizontally within an element
+
+- Image width and height
+By default, an img element's width and height values will be the same
+as the actual image file's height and width
+
+You would use the height and width property to change the value
+Best practice to include these even if you not changing the values.
+As the image will take longer to load than the rest of the page contents
+as stating the state will reserve it on the page
+
+-- CSS cascade
+
+- Specificity
+Inline styles have the highest level
+Id selectors
+Class selectors
+Type selectors
+
+This will only take into account when the element has multiple conflcting
+declarations targeting it
+
+- Inheritance
+CSS properties that will be applied to their descendants
+Typography based properties (color, font-size, font-family)
+are usually inherited, while most other properties aren't
+
+Directly targeting an element overrides the inheritance
+
+- Rule order
+This is the tie-breaker 
+What ever rule was the last defined is the winner
+ex. 
+
+.alert {}
+.warning {} 
+
+warning would be the winner, as it was declared last
+
+-- Adding CSS to HTML
+- External CSS
+Within the <head> tag, you would use the <link> 
+ex.
+<head>
+	<link rel="stylesheet" href="style.css">
+</head>
+Attributes for link
+	rel: Relationship between the HTML and linked file
+	href: Is the location of the CSS file.
+
+- Internal CSS (Embedded CSS)
+Using the style tag within the head tag, you can write out CSS
+that affects the HTML page.
+ex.
+<head>
+	<style>
+		div {
+			color: red;
+		}
+	</style>
+</head>
+
+Inline CSS
+Adds CSS directly to the element itself
+Not recommended
+ex.
+<div style="color: red"></div>
+Uses the style attribute, then we place the CSS onto the elements
+
+
+
+
+
+
 
 Comments in CSS are defiend by /* */
 display: flex; -> Turns the element into a flex container (Flexbox)
