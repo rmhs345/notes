@@ -234,12 +234,28 @@ Create a report based on case data -> Then can create a dashboard for it
 
 --------------------------------------------------------------------------------------------------------
 
-** Lightning Web Components Basics
+** Building Lightning Web Components
 
 --------------------------------------------------------------------------------------------------------
-
-- Discover Lightning Web Components
-Focused on the developer and the user experience
-
-
-
+LWC comes bundled with ESLint by default
+Deploying and configure the LWC
+	Push metadata using: sfdx force:source:push
+	Open the Org: sfdx force:org:open
+	
+Introduction to LWC
+	select, video, input are web components
+	template tag is a fundamental building block for a component (Root node)
+	Uses classes for the JS file
+	Salesforce compiles and takes cares of the boilerplate component construction
+		You only need to worry about deploying the files and the metadata to the org
+	Aura components came first, now they're trying to migrate users to LWC
+	Component Library: https://developer.salesforce.com/docs/component-library/overview/components?_ga=2.107680390.569547169.1675694401-1783804688.1675694401
+	Scratch Orgs are disosable Salesforce Orgs for development/testing
+		Dev Hub is a feature used to manage these environments
+	Component needs a folder and files that share the name
+	Default namespace is c, so all LWC have a namespace that's separated from the folder named by a hyphen - ex. app -> (c-app)
+	camelCasing for file naming
+	kebab-case in the markup
+		In markup, to reference a component with the folder name myComponent, use <c-my-component>
+	The identifiers in the curly braces {} are bound to the fields of the same name in the corresponding JavaScript class.
+	USe if:false and if:true conditional directives within your template to determine which visual elements are rendered.
